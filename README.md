@@ -101,6 +101,51 @@ INFO:     Uvicorn running on http://127.0.0.1:8000
 - Swagger UI: http://127.0.0.1:8000/docs
 - ReDoc: http://127.0.0.1:8000/redoc
 
+## Usage instructions
 
+Once your application server is running, you can interact with the API using the Swagger UI, command-line tools like curl, or API clients such as Postman.
+
+## Usage Swagger UI (recommended for exploration)
+
+1. Open your browser and navigate to:
+
+```bash
+http://127.0.0.1:8000/docs
+```
+
+2. Locate the `POST /predict` endpoint in the list.
+3. Click **Try it out**.
+4. In the request body input, enter sample text:
+
+```json
+{
+  "text": "This is a fantastic project!"
+}
+```
+5. Click **Execute**.
+6. The response section below will display the prediction result.
+
+This is ideal for quickly verifying functionality and exploring the API.
+
+## Using `curl` (Command Line)
+
+To send a request directly from the terminal:
+
+```bash
+curl -X POST http://127.0.0.1:8000/predict \
+  -H "Content-Type: application/json" \
+  -d '{"text": "Deploying models is easier than ever."}'
+```
+Expected output: 
+```json
+{
+  "result": [
+    {
+      "label": "POSITIVE",
+      "score": 0.9997
+    }
+  ]
+}
+```
 
 
