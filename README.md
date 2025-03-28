@@ -147,5 +147,31 @@ Expected output:
   ]
 }
 ```
+This method is useful for scripting and quick tests.
+
+## Using Postman (GUI-based API Testing Tool)
+
+1. Open Postman and create a new **POST** request.
+2. Set the request URL to:
+
+```bash
+http://127.0.0.1:8000/predict
+```
+3. Go to the Headers tab and add:
+    - `Key `: `Content-Type`
+    - `Value `: `application/json`
+
+4. Navigate to the **Body** tab.
+    - Select raw and choose **JSON** as the format.
+    - Paste the following:
+    
+```json
+{
+  "text": "FastAPI is great for ML deployment."
+}
+```
+5. Click **Send** to see the response.
+
+Postman is especially helpful for testing with varying inputs or headers.
 
 
