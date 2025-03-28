@@ -182,3 +182,5 @@ http://127.0.0.1:8000/redoc
 ```
 This is a read-only reference for exploring endpoints and data structures.
 
+## License
+This project is licensed under the MIT License.
