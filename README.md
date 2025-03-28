@@ -174,4 +174,11 @@ http://127.0.0.1:8000/predict
 
 Postman is especially helpful for testing with varying inputs or headers.
 
+## Alternate documentation UI (ReDoc)
+
+If you prefer a different layout, FastAPI also auto-generates a ReDoc UI:
+```bash
+http://127.0.0.1:8000/redoc
+```
+This is a read-only reference for exploring endpoints and data structures.
 
