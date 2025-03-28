@@ -72,14 +72,31 @@ pip install -r requirements.txt
 This will install:
 
 - FastAPI for creating the web application.
-
 - Uvicorn as the ASGI server.
-
 - Transformers for accessing pretrained models.
-
 - Torch as the backend deep learning framework.
 
+## Verify files are present 
+
+- app.py
+- requirements.txt
+- README.md
+- .github/ISSUE_TEMPLATE/bug_report.md
+- LINCENSE
+
+## Run the application server
+
+```bash
 uvicorn app:app --reload
+```
+The --reload flag enables automatic server restart on code changes.
+
+Expected output:
+
+```bash
+INFO:     Uvicorn running on http://127.0.0.1:8000
+```
+
 
 
 
