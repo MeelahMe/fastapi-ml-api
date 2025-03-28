@@ -17,7 +17,7 @@ By the end of this guide, you will learn how to:
 
 ---
 
-## Project Structure
+## Project structure
 
 ```c#
 fastapi-ml-api/ 
@@ -30,7 +30,6 @@ fastapi-ml-api/
     └── bug_report.md # Template for structured bug reporting
 ```
 
-
 ---
 
 ## Prerequisites
@@ -41,9 +40,47 @@ fastapi-ml-api/
 
 ---
 
-## Setup Instructions
+## Setup instructions
 
- 
+ ```bash
+git clone https://github.com/MeelahMe/fastapi-ml-api.git
+cd fastapi-ml-api
+```
+## Create and activate a virtual environment (recommended)
+
+```bash
+python -m venv venv
+```
+Activate the environment:
+- On macOS/Linux
+
+```bash
+source venv/bin/activate 
+```
+- On Windows:
+
+```bash
+venv\\Scripts\\activate
+```
+You should now see your terminal prompt prefixed with (venv).
+
+## Install required packages
+
+```bash
+pip install -r requirements.txt
+```
+This will install:
+
+- FastAPI for creating the web application.
+
+- Uvicorn as the ASGI server.
+
+- Transformers for accessing pretrained models.
+
+- Torch as the backend deep learning framework.
+
+uvicorn app:app --reload
+
 
 
 
